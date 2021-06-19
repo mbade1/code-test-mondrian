@@ -1,0 +1,260 @@
+/* Color Palette */
+
+:root {
+  --black: #252525;
+  --dark-gray: #a8a7a7;
+  --darker-gray: #7a7878;
+  --light-gray: #e9e5e5;
+  --red: #d4502e;
+  --blue: #134370;
+  --yellow: #d1b24d;
+}
+
+/* Content styles */
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  color: black;
+  padding: 5px;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+.frame {
+  justify-content: center;
+  max-width: 650px;
+  height: 650px;
+  margin: auto;
+}
+
+.container {
+  display: grid;
+  border: 8px solid gold;
+  padding: 20px;
+  height: 85%;
+}
+
+.painting {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr) 35px;
+  grid-template-rows: repeat(20, 1fr) 50px;
+}
+
+/* Default border thickness for all rectangles. */
+.rectangle {
+  border: 2px solid black;
+}
+
+/* Set the colors, borders (rectangular thickness), and dimensions of each div. */
+.rectangle-1 {
+  background-color: var(--light-gray);
+  grid-column: span 3;
+  border-top: 1px solid var(--darker-gray);
+  border-right: none;
+  border-bottom: 1px solid var(--darker-gray);
+  border-left: 1px solid var(--darker-gray);
+}
+
+.rectangle-2 {
+  background-color: var(--dark-gray);
+  grid-column: span 12;
+  border: 1px solid black;
+  border-top: 1px solid var(--darker-gray);
+}
+
+.rectangle-3 {
+  background-color: var(--light-gray);
+  grid-column: span 6;
+  grid-row: span 3;
+  border: none;
+  border-top: 1px solid var(--darker-gray);
+  border-right: 1px solid var(--darker-gray);
+}
+
+.rectangle-4 {
+  background-color: var(--light-gray);
+  grid-column: span 3;
+  grid-row: span 10;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.rectangle-5 {
+  background-color: var(--black);
+  grid-column: span 2;
+  grid-row: span 2;
+  border-right: none;
+}
+
+.rectangle-6 {
+  background-color: var(--blue);
+  grid-column: span 10;
+  grid-row: span 2;
+}
+
+.rectangle-7 {
+  background-color: var(--dark-gray);
+  grid-column: span 8;
+  grid-row: span 4;
+}
+
+.rectangle-8 {
+  background-color: var(--red);
+  grid-column: span 4;
+  grid-row: span 4;
+}
+
+.rectangle-9 {
+  background-color: var(--black);
+  grid-column: span 5;
+  grid-row: span 4;
+}
+
+.rectangle-10 {
+  background-color: var(--blue);
+  grid-column: span 1;
+  grid-row: span 4;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.rectangle-11 {
+  background-color: var(--black);
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+.rectangle-12 {
+  background-color: var(--yellow);
+  grid-column: span 6;
+  grid-row: span 4;
+}
+
+.rectangle-13 {
+  background-color: var(--blue);
+  grid-column: span 4;
+  grid-row: span 7;
+}
+
+.rectangle-14 {
+  background-color: var(--red);
+  grid-column: span 5;
+  grid-row: span 7;
+  border-bottom: 1px solid black;
+}
+
+.rectangle-15 {
+  background-color: var(--dark-gray);
+  grid-column: span 1;
+  grid-row: span 10;
+  border-right: 1px solid var(--darker-gray);
+  border-left: 1px solid var(--dark-gray);
+}
+
+.rectangle-16 {
+  background-color: var(--dark-gray);
+  grid-column: span 3;
+  grid-row: span 9;
+  border-top: 2px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid var(--darker-gray);
+}
+
+.rectangle-17 {
+  background-color: var(--dark-gray);
+  grid-column: span 2;
+  grid-row: span 9;
+}
+
+.rectangle-18 {
+  background-color: var(--yellow);
+  grid-column: span 6;
+  grid-row: span 3;
+}
+
+.rectangle-19 {
+  background-color: var(--red);
+  grid-column: span 6;
+  grid-row: span 3;
+}
+
+.rectangle-20 {
+  background-color: var(--light-gray);
+  grid-column: span 4;
+  grid-row: span 3;
+}
+
+.rectangle-21 {
+  background-color: var(--yellow);
+  grid-column: span 5;
+  grid-row: span 3;
+}
+
+.rectangle-22 {
+  background-color: var(--black);
+  grid-column: span 6;
+  grid-row: span 3;
+}
+
+.rectangle-23 {
+  background-color: var(--dark-gray);
+  grid-column: span 4;
+  grid-row: span 3;
+}
+
+.rectangle-24 {
+  background-color: var(--blue);
+  grid-column: span 5;
+  grid-row: span 3;
+}
+
+.rectangle-25 {
+  background-color: var(--red);
+  grid-column: span 1;
+  grid-row: span 4;
+  border-left: 1px solid black;
+}
+
+.rectangle-26 {
+  background-color: var(--yellow);
+  grid-column: span 5;
+  grid-row: span 1;
+  border-bottom: 1px solid var(--darker-gray);
+  border-left: 1px solid var(--darker-gray);
+}
+
+.rectangle-27 {
+  background-color: var(--light-gray);
+  grid-column: span 10;
+  grid-row: span 2;
+  border-bottom: 1px solid var(--darker-gray);
+  border-left: 1px solid black;
+}
+
+.rectangle-28 {
+  background-color: var(--black);
+  grid-column: span 5;
+  grid-row: span 1;
+  border-bottom: 1px solid var(--darker-gray);
+}

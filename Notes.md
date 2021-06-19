@@ -16,8 +16,10 @@ Painting: 1:00 PM
 
 600px-
 
-- Make divs that display on mobile.
+- Turn flex direction into a column, so that divs of previous grid rectangles line up vertically. **DONE**
 - Each div is a container for each gridded color div (rectangle), based on the additional class name from the large image.
+- Get number of rectangles for each color, then make that number of rectangles the correlating background color. **DONE**
+  - Ex: 4 red rectangles; grab 4 child rectangles and make them red **DONE**
 
 ## Process
 

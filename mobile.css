@@ -1,3 +1,105 @@
-@media (max-width: 600px) {
-  /* Insert phone screen (up to 600px) CSS here */
+/* Insert phone screens (up to 600px) CSS here */
+
+@media screen and (max-width: 600px) {
+  .painting {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .frame {
+    margin: 20px;
+    height: auto;
+  }
+
+  .rectangle {
+    flex-grow: 1;
+    border: 1px solid black;
+    margin: 2px;
+  }
+
+  /* 
+    Get number of rectangles for each color, then make that number of rectangles the correlating background color:
+      black 5
+      dark-gray 6
+      light-gray 5
+      red 4
+      blue 4
+      yellow 4
+  */
+
+  .rectangle:nth-child(-n + 5) {
+    background-color: var(--black);
+  }
+
+  .rectangle:nth-child(n + 6):nth-child(-n + 11) {
+    background-color: var(--dark-gray);
+  }
+
+  .rectangle:nth-child(n + 12):nth-child(-n + 16) {
+    background-color: var(--light-gray);
+  }
+
+  .rectangle:nth-child(n + 17):nth-child(-n + 20) {
+    background-color: var(--red);
+  }
+
+  .rectangle:nth-child(n + 21):nth-child(-n + 24) {
+    background-color: var(--blue);
+  }
+
+  .rectangle:nth-child(n + 25):nth-child(-n + 28) {
+    background-color: var(--yellow);
+  }
+
+  .color-palette {
+    color: black;
+    display: inline-block;
+    border: 3px solid green;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .colors {
+    padding: 10px;
+  }
+
+  .color {
+    margin-bottom: 5px;
+    color: white;
+    padding: 5px;
+  }
+
+  .color:nth-child(odd) {
+    width: 45%;
+    float: left;
+  }
+
+  .color:nth-child(even) {
+    width: 45%;
+    float: right;
+  }
+
+  .black {
+    background-color: var(--black);
+  }
+
+  .dark-gray {
+    background-color: var(--dark-gray);
+  }
+
+  .light-gray {
+    background-color: var(--light-gray);
+  }
+
+  .red {
+    background-color: var(--red);
+  }
+
+  .blue {
+    background-color: var(--blue);
+  }
+
+  .yellow {
+    background-color: var(--yellow);
+  }
 }

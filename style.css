@@ -5,6 +5,7 @@
   --dark-gray: #a8a7a7;
   --darker-gray: #7a7878;
   --light-gray: #e9e5e5;
+  --lighter-gray: #f8f2f2;
   --red: #d4502e;
   --blue: #134370;
   --yellow: #d1b24d;
@@ -16,6 +17,11 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
   text-align: center;
+  background-color: var(--lighter-gray);
+}
+
+.header {
+  margin-bottom: 20px;
 }
 
 h2,
@@ -26,15 +32,20 @@ h4 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.15em;
+  font-style: italic;
 }
 
 .frame {
@@ -49,6 +60,7 @@ h4 {
   border: 8px solid gold;
   padding: 20px;
   height: 85%;
+  background-color: white;
 }
 
 .painting {
@@ -56,6 +68,10 @@ h4 {
   grid-template-columns: repeat(20, 1fr) 35px;
   grid-template-rows: repeat(20, 1fr) 50px;
   color: white;
+}
+
+.color-counter {
+  display: none;
 }
 
 /* Default border thickness for all rectangles. */
@@ -67,10 +83,10 @@ h4 {
 .rectangle-1 {
   background-color: var(--light-gray);
   grid-column: span 3;
-  border-top: 1px solid var(--darker-gray);
+  border-top: 1px solid var(--dark-gray);
   border-right: none;
-  border-bottom: 1px solid var(--darker-gray);
-  border-left: 1px solid var(--darker-gray);
+  border-bottom: 1px solid var(--dark-gray);
+  border-left: 1px solid var(--dark-gray);
 }
 
 .rectangle-2 {
@@ -85,8 +101,8 @@ h4 {
   grid-column: span 6;
   grid-row: span 3;
   border: none;
-  border-top: 1px solid var(--darker-gray);
-  border-right: 1px solid var(--darker-gray);
+  border-top: 1px solid var(--dark-gray);
+  border-right: 1px solid var(--dark-gray);
 }
 
 .rectangle-4 {

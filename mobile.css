@@ -1,20 +1,25 @@
 /* Insert phone screens (up to 600px) CSS here */
 
 @media screen and (max-width: 600px) {
-  .painting {
-    display: flex;
-    flex-direction: column;
-  }
-
   .frame {
     margin: 20px;
     height: auto;
   }
 
+  .painting {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .color-counter {
+    display: inline-block;
+  }
+
   .rectangle {
     flex-grow: 1;
-    border: 1px solid black;
-    margin: 2px;
+    border: 0px;
+    margin: 3px;
+    padding: 3px;
   }
 
   /* 
@@ -37,6 +42,7 @@
 
   .rectangle:nth-child(n + 12):nth-child(-n + 16) {
     background-color: var(--light-gray);
+    color: black;
   }
 
   .rectangle:nth-child(n + 17):nth-child(-n + 20) {
@@ -49,6 +55,16 @@
 
   .rectangle:nth-child(n + 25):nth-child(-n + 28) {
     background-color: var(--yellow);
+  }
+
+  /* Separate the groups of colors */
+
+  .rectangle:nth-child(5),
+  .rectangle:nth-child(11),
+  .rectangle:nth-child(16),
+  .rectangle:nth-child(20),
+  .rectangle:nth-child(24) {
+    margin-bottom: 20px;
   }
 
   .color-palette {
@@ -89,6 +105,7 @@
 
   .light-gray {
     background-color: var(--light-gray);
+    color: black;
   }
 
   .red {
@@ -101,5 +118,15 @@
 
   .yellow {
     background-color: var(--yellow);
+  }
+}
+
+/* Color Palette float issues for x-small screens */
+@media screen and (max-width: 300px) {
+  .color:nth-child(odd),
+  .color:nth-child(even) {
+    float: none;
+    display: block;
+    width: 90%;
   }
 }

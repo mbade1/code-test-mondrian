@@ -1,11 +1,10 @@
 # Piet Mondrian - No. VI Composition No. II
 
-This is a test designed to challenge your CSS layout skills.  Piet Mondrian was a 20th-century Dutch painter who popularized a movement in art, design, and architecture know as [De Stijl](https://en.wikipedia.org/wiki/De_Stijl).  His painting *[No. VI / Composition No. II](https://www.artsy.net/artwork/piet-mondrian-no-vi-slash-composition-no-ii)* is typical of this movement, featuring a grid of rectangular shapes in shades of white, gray and black, accented by bold primary colors.
-
+This is a test designed to challenge your CSS layout skills. Piet Mondrian was a 20th-century Dutch painter who popularized a movement in art, design, and architecture know as [De Stijl](https://en.wikipedia.org/wiki/De_Stijl). His painting _[No. VI / Composition No. II](https://www.artsy.net/artwork/piet-mondrian-no-vi-slash-composition-no-ii)_ is typical of this movement, featuring a grid of rectangular shapes in shades of white, gray and black, accented by bold primary colors.
 
 ## The Challenge
 
-Replicate Piet Mondrian's painting *[No. VI / Composition No. II](https://www.artsy.net/artwork/piet-mondrian-no-vi-slash-composition-no-ii)* using only CSS and HTML.
+Replicate Piet Mondrian's painting _[No. VI / Composition No. II](https://www.artsy.net/artwork/piet-mondrian-no-vi-slash-composition-no-ii)_ using only CSS and HTML.
 
 ## Requirements
 
@@ -18,7 +17,10 @@ Replicate Piet Mondrian's painting *[No. VI / Composition No. II](https://www.ar
 - Hit it with the pretty stick; personalize the composition with some tasteful visual flair.
 
 ## Instructions
+
 - Fork this repo to a private repo in your own GitHub account.
 - Complete the challenge.
 - Push your solution to your private repo.
 - Share your repo with @thisanimus and @robmomary.
+
+**_This test was forked by Michael Bade (mbade1) on June 19, 2021 at 10:50 AM._**
